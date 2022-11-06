@@ -28,7 +28,7 @@ body::-webkit-scrollbar{
         -o-border-radius: 12px;
     }
 section:target{
-    padding-top: 96px;
+    padding-top: 86px;
 }
 .special-text {
     font-weight: bold;
@@ -37,6 +37,7 @@ section:target{
 .navbar{
     background-color: #000;
     z-index: 999!important;
+    padding:13px 0;
 }
 .navbar .nav-link{
     color:rgb(236, 236, 236)!important;
@@ -81,7 +82,7 @@ border: 1px solid red!important;
 /* banner styles */
 
 #banner-carousel .carousel-item{    
-    height: calc(100vh - 96px);
+    height: calc(100vh - 86px);
     background-position: start!important;
 }
 #banner-carousel  .carousel-item img{
