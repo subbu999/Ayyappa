@@ -103,21 +103,20 @@ border: 1px solid red!important;
     bottom:120px;
 }
 .goto-btn{
-    display: inline-block;
+    display: block;
     height: 50px;
     width:50px;    
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 50%;
+    position: relative;
+    border: 2px solid #fefefe;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.goto-btn{
-    position: relative;
-    border: 2px solid #fefefe;
-}
 .goto-btn span{
+    display:block;
     color: #fefefe;
     font-size: 25px;
     position:absolute;
