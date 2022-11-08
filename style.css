@@ -51,12 +51,11 @@ section:target{
 border: 1px solid red!important;
 }
 .navbar .dropdown-menu{
-background-color: rgba(16, 16, 16, 0.9);}
-.navbar .dropdown-item{
-color:#fefefe;
+background-color: rgba(16, 16, 16, 0.9);
 }
 .navbar .dropdown-item{
-    padding:.75rem 1.5rem;
+color:#fefefe;
+padding:.75rem 1.5rem;
 }
 .navbar .dropdown-item:hover{
     background-color: rgb(58, 58, 58);
