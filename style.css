@@ -11,11 +11,11 @@ body::-webkit-scrollbar{
     }
     body::-webkit-scrollbar-track{
         background-color:rgba(63, 63, 63, 0.463);
-        /* border-radius: 10px;
+        border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
-        -o-border-radius: 10px; */
+        -o-border-radius: 10px;
         box-shadow:0 0 3px #fefefe;
     }
     body::-webkit-scrollbar-thumb{
@@ -37,7 +37,7 @@ section:target{
 .navbar{
     background-color: #000;
     z-index: 999!important;
-    padding:13px 0;
+    padding:13px 20px;
 }
 .navbar .nav-link{
     color:rgb(236, 236, 236)!important;
@@ -50,34 +50,21 @@ section:target{
 .navbar-toggler:focus{
 border: 1px solid red!important;
 }
-.cool-link{    
-    position: relative;
-    width:fit-content
+.navbar .dropdown-menu{
+background-color: rgba(16, 16, 16, 0.9);}
+.navbar .dropdown-item{
+color:#fefefe;
 }
-.cool-link::after{
-    content: '';
-    display: block;
-    background-color: red;
-    width: 0%;
-    height:2px;
-    position: absolute;
-    left: 50%;
-    bottom: 5px;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transition: width .3s ease;
-    -webkit-transition: width .3s ease;
-    -moz-transition: width .3s ease;
-    -ms-transition: width .3s ease;
-    -o-transition: width .3s ease;
-    
+.navbar .dropdown-item{
+    padding:.75rem 1.5rem;
 }
-.cool-link:hover::after{
-    width: 100%;
+.navbar .dropdown-item:hover{
+    background-color: rgb(58, 58, 58);
 }
+.dropdown-divider{
+    margin:0;
+}
+
 
 /* banner styles */
 
@@ -343,6 +330,34 @@ outline: none!important;
     }
 }
 @media(min-width:768px){
+    .cool-link{    
+        position: relative;
+        width:fit-content
+    }
+    .cool-link::after{
+        content: '';
+        display: block;
+        background-color: red;
+        width: 0%;
+        height:2px;
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transition: width .3s ease;
+        -webkit-transition: width .3s ease;
+        -moz-transition: width .3s ease;
+        -ms-transition: width .3s ease;
+        -o-transition: width .3s ease;
+        
+    }
+    .cool-link:hover::after{
+        width: 100%;
+    }
     .cool-link:hover::after{
         width: calc(100% - 1rem);
     }
