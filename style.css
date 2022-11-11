@@ -290,11 +290,10 @@ border:1px solid #ccc;
     padding:10px 30px;
     display: block;
     width:100%;
-    border: 3px solid red;
     font-weight: 600;
     letter-spacing: 1px;
-    color: red;
-    background-color: transparent;
+    color: #fff;
+    background-color: rgb(255, 0, 242);
     
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
