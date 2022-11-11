@@ -283,9 +283,8 @@ p small{
     -o-transition: all .3s ease;
 }
 #contact input:focus,#contact textarea:focus{
-border: 1px solid #ccc;
-box-shadow:0 0 10px #ccc;
-outline: none!important;
+outline: none;
+border:1px solid #ccc;
 }
 .submit-btn{
     padding:10px 30px;
