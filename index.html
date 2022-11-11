@@ -1271,17 +1271,17 @@
                     <div class="col-md-12 col-lg-6">
                         <p>Let us know your opinion on our site. We may not perfect but "we can"... with your feedback.
                         </p>
-                        <form action="https://formsubmit.co/af644f79dc5f30e0e08021eadb9d7db7" method="POST">
+                        <form id="myForm">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name" name="uname" id="uname">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email Address" name="email"
                                     id="email">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="10" placeholder="Message" name="body"
-                                    id="body"></textarea>
+                                <textarea class="form-control" rows="10" placeholder="Message" name="message"
+                                    id="message"></textarea>
                             </div>
                             <div class="form-group">
                                 <input type="hidden" name="_template" value="table">
@@ -1289,12 +1289,48 @@
                                     value="https://subbu999.github.io/Ayyappa/pages/thankyou.html">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_autoresponse"
-                                    value="Thank you for your message!!! Swamiye sharanam ayyappa">
-
+                                    value="Thank you for your message!!! Swamiye sharanamayyappa">
                             </div>
                             <button type="submit" class="submit-btn" id="#submit-btn">SEND</button>
                         </form>
                     </div>
+                    <!-- spinner -->
+                    <div class="modal" tabindex="-1" role="dialog" id="spinModal">
+                        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="text-center m-5">
+                                        <div class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <p>Sending</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal for thank you -->
+                    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content text-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Thank You!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" onclick="$('#myModal').hide()">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>We will reply to you as soon as possible.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                        onclick="$('#myModal').hide()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end -->
                     <div class="col-md-12 col-lg-6 py-3">
                         <div id="map"></div>
                     </div>
@@ -1326,27 +1362,9 @@
                 position: { lat: 17.5003988, lng: 78.3939211 },
                 map: map
             })
-        }
-        // contact form
-        function send() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "Subbu",
-                Password: "Dravid",
-                To: 'balinenis540@gmail.com',
-                From: "b.subbu504@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-
-                message => {
-                    console.log(message)
-                    alert(message)
-                }
-            );
-
-        }
+        }        
     </script>
 </body>
 
 </html>
+<!--  action="https://formsubmit.co/af644f79dc5f30e0e08021eadb9d7db7" method="POST" -->

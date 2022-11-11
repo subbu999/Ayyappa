@@ -310,6 +310,13 @@ border:1px solid #ccc;
 #map {
     height: 100%;    
   }
+/* Modal styles */
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#spinModal .modal-content{
+    background-color: transparent;
+}
 
 
 @media(max-width:568px){
